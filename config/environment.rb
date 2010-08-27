@@ -17,8 +17,8 @@ Rails::Initializer.run do |config|
   # Specify gems that this application depends on and have them installed with rake gems:install
   # config.gem "bj"
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
-  config.gem "sqlite3-ruby",:version => '1.3.1',  :lib => "sqlite3"
-  config.gem "rails",:version => '2.3.9'
+  # config.gem "sqlite3-ruby",:version => '1.3.1',  :lib => "sqlite3"
+  # config.gem "rails",:version => '2.3.9'
   # config.gem "aws-s3", :lib => "aws/s3"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
