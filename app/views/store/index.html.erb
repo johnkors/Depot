@@ -7,6 +7,11 @@
     <%= product.description %>
     <div class="price-line">
     <span class="price"><%= number_to_currency(product.price) %></span>
+    <!-- START_HIGHLIGHT -->
+    <!-- START:add_to_cart -->
+    <%= button_to 'Add to Cart' %>
+    <!-- END:add_to_cart -->
+    <!-- END_HIGHLIGHT -->
     </div>
   </div>
 <% end %>
