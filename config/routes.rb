@@ -3,5 +3,5 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :stores
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'
-  map.root :controller => 'products'
+  map.root :controller => 'store'
 end
