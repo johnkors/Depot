@@ -14,19 +14,23 @@
   </div>
   <div id="columns">
     <div id="side">
-      <a href="http://localhost:3000/store/">Home</a><br />
+      <!-- START_HIGHLIGHT -->
+      <div id="cart">
+        <%= render(:partial => "cart", :object => @cart) %>
+      </div>
+      <!-- END_HIGHLIGHT -->
+
+      <a href="http://localhost:3000">Home</a><br />
       <a href="http://www..../faq">Questions</a><br />
       <a href="http://www..../news">News</a><br />
       <a href="http://www..../contact">Contact</a><br />
     </div>
     <div id="main">
-      <!-- START_HIGHLIGHT -->
       <!-- START:flash -->
       <% if flash[:notice] -%>
         <div id="notice"><%= flash[:notice] %></div>
       <% end -%>
       <!-- END:flash -->
-      <!-- END_HIGHLIGHT -->
 
       <%= yield :layout %>
     </div>
